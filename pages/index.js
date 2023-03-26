@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import Image from 'next/image'
+import whatsLogo from '../public/whatsAppLogo.png'
 import { Inter } from 'next/font/google'
 import styles from '@/styles/Home.module.css'
 
@@ -19,7 +20,8 @@ export default function Home() {
         <div className={styles.description}>
         <h1>BrotherHood Poker Club</h1>
         <p>Murillo chupa piroca e eu preciso do que você quer que eu coloquei na página</p>
-        <p>teste de branch  </p>
+        <a href="https://web.whatsapp.com/send?phone=5511988362072">Entre em contato conosco pelo WhatsApp</a>
+        <Image src={whatsLogo} alt='Whatsapp' width={300} height={150} />
         </div>
       </main>
     </>
