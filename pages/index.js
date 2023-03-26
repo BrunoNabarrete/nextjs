@@ -14,10 +14,12 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
+      
       <main className={styles.main}>
         <div className={styles.description}>
         <h1>BrotherHood Poker Club</h1>
         <p>Murillo chupa piroca e eu preciso do que você quer que eu coloquei na página</p>
+        <p>teste de branch  </p>
         </div>
       </main>
     </>
