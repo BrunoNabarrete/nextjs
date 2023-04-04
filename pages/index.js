@@ -2,6 +2,9 @@ import Head from 'next/head'
 import Image from 'next/image'
 import whatsLogo from '../public/whatsAppLogo.png'
 import { Inter } from 'next/font/google'
+import MyDropdown from './components/MyDropDown'
+import HeaderPage from './components/HeaderPage'
+import footerPage from './components/footerPage'
 import styles from '@/styles/Home.module.css'
 
 const inter = Inter({ subsets: ['latin'] })
@@ -15,15 +18,19 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      
-      <main className={styles.main}>
-        <div className={styles.description}>
-        <h1>BrotherHood Poker Club</h1>
-        <p>Murillo chupa piroca e eu preciso do que você quer que eu coloquei na página</p>
+      <div className="bg-blue-500">
+      <HeaderPage/>
+      <MyDropdown/>
+      <footerPage/>
+      </div>
+      {/* <main className="bg-blue-500">
+        <div className="bg-blue-500">
+        <h1 className="text-3xl font-bold underline">BrotherHood Poker Club</h1>
+        <p></p>
         <a href="https://web.whatsapp.com/send?phone=5511988362072">Entre em contato conosco pelo WhatsApp</a>
         <Image src={whatsLogo} alt='Whatsapp' width={300} height={150} />
         </div>
-      </main>
+      </main> */}
     </>
   )
 }
