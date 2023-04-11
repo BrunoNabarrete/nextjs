@@ -1,2 +1,88 @@
 Azul: #262261
 Verde: #8CC63E
+
+Na home do site, pensei em alguns pontos que podem ser interessantes: 
+Paleta de cores que já sabemos + logo
+//Imagem deslizantes para o lado com cada um dos serviço oferecidos: Poker, Cacheta, Poastas esportivas e loja. ( fazer um carrocel com imagens e ao clicar redirecionar para page correta )
+Conteúdos: Textos e informações para jogadores iniciantes ou que querem se aprimorar, num estilo meio blog com dicas, informações e outros conteúdos. O objetivo é serem conteúdos que podem ser pesquisamos no google e direcionados para o site, ou seja, passa a ficar conhecido não somente para a pessoa que quer entrar no clube, mas para quem quer consumir conteúdo sobre jogo e a partir disso conhece o clube. É uma ponto meio blog e esses conteúdos podem ser mensais, Isso torna o seu site mais relevante no google também. 
+Cadastre já
+
+dropdown (
+- Chippix
+- Produtos - a lojinha 
+- Serviços 
+- Seja Agente e ganhe dinheiro 
+- Fale com a gente 
+)
+
+
+** tentar fazer imagens com a IA geradora de imagem 
+
+O Texas Hold'em é um jogo de cartas emocionante e popular que é jogado com um baralho de 52 cartas. O objetivo do jogo é fazer a melhor combinação de cinco cartas possível usando as duas cartas que você recebe como suas cartas de mão (hole cards) e as cinco cartas comunitárias que são dispostas no centro da mesa.
+
+Aqui está uma explicação detalhada sobre como jogar Texas Hold'em:
+
+Colocando as apostas iniciais:
+No Texas Hold'em, cada jogador faz uma aposta inicial chamada de "blind". O jogador à esquerda do dealer coloca o "small blind" (aposta mínima), enquanto o jogador à esquerda do small blind coloca o "big blind" (aposta máxima). Estas apostas obrigatórias garantem que haja dinheiro em jogo desde o início de cada mão.
+
+Distribuindo as cartas:
+O dealer, que é o jogador com o botão (uma marcação que indica qual jogador seria o dealer em uma mesa de cassino), distribui duas cartas para cada jogador, começando pelo jogador à sua esquerda e seguindo no sentido horário. Estas são as cartas de mão de cada jogador, que só eles podem ver.
+
+As apostas iniciais continuam:
+Após receberem suas cartas de mão, os jogadores podem optar por desistir (fold), igualar (call) ou aumentar (raise) a aposta inicial. O jogador à esquerda do big blind é o primeiro a agir e as ações seguem no sentido horário. Se um jogador aumentar a aposta, os outros jogadores devem igualar ou aumentar a aposta para continuar no jogo.
+
+O flop:
+Depois que todas as apostas iniciais são feitas, o dealer coloca três cartas comunitárias viradas para cima no centro da mesa. Isso é conhecido como o flop. Os jogadores usam essas cartas em conjunto com suas cartas de mão para formar sua mão final.
+
+As apostas continuam:
+Depois do flop, começa uma nova rodada de apostas, começando pelo jogador à esquerda do dealer. Os jogadores podem desistir, igualar ou aumentar a aposta, assim como na rodada anterior.
+
+O turn:
+Depois da rodada de apostas, o dealer coloca mais uma carta comunitária virada para cima no centro da mesa. Isso é conhecido como o turn. Novamente, os jogadores usam essa carta em conjunto com suas cartas de mão para formar sua mão final.
+
+As apostas continuam:
+Uma nova rodada de apostas começa, seguindo o mesmo processo da rodada anterior.
+
+O river:
+Depois da rodada de apostas do turn, o dealer coloca a última carta comunitária virada para cima no centro da mesa. Isso é conhecido como o river. Agora, os jogadores têm todas as cinco cartas comunitárias e suas duas cartas de mão para formar a melhor mão possível.
+
+A última rodada de apostas:
+Uma última rodada de apostas começa, seguindo o mesmo processo das rodadas anteriores.
+
+Showdown:
+Se mais de um jogador permanecer na rodada final de apostas, eles devem mostrar suas cartas para determinar quem tem a melhor mão.
+
+Colocar um Menu onde fique listado todas essas opções
+
+O Omaha 5 cartas é uma variação emocionante do jogo de cartas de poker que é jogado com um baralho de 52 cartas. A principal diferença entre o Omaha 5 cartas e o Texas Hold'em é que em vez de receber duas cartas de mão (hole cards), os jogadores recebem cinco cartas de mão e devem usar exatamente duas dessas cartas em conjunto com três cartas comunitárias para formar sua melhor mão possível.
+
+Aqui está uma explicação detalhada de como jogar Omaha 5 cartas:
+
+Colocando as apostas iniciais:
+No Omaha 5 cartas, cada jogador faz uma aposta inicial chamada de "blind". O jogador à esquerda do dealer coloca o "small blind" (aposta mínima), enquanto o jogador à esquerda do small blind coloca o "big blind" (aposta máxima). Estas apostas obrigatórias garantem que haja dinheiro em jogo desde o início de cada mão.
+
+Distribuindo as cartas:
+O dealer, que é o jogador com o botão (uma marcação que indica qual jogador seria o dealer em uma mesa de cassino), distribui cinco cartas para cada jogador, começando pelo jogador à sua esquerda e seguindo no sentido horário. Estas são as cartas de mão de cada jogador, que só eles podem ver.
+
+As apostas iniciais continuam:
+Após receberem suas cartas de mão, os jogadores podem optar por desistir (fold), igualar (call) ou aumentar (raise) a aposta inicial. O jogador à esquerda do big blind é o primeiro a agir e as ações seguem no sentido horário. Se um jogador aumentar a aposta, os outros jogadores devem igualar ou aumentar a aposta para continuar no jogo.
+
+O flop:
+Depois que todas as apostas iniciais são feitas, o dealer coloca três cartas comunitárias viradas para cima no centro da mesa. Isso é conhecido como o flop. Os jogadores usam essas cartas em conjunto com suas cartas de mão para formar sua mão final.
+
+As apostas continuam:
+Depois do flop, começa uma nova rodada de apostas, começando pelo jogador à esquerda do dealer. Os jogadores podem desistir, igualar ou aumentar a aposta, assim como na rodada anterior.
+
+O turn:
+Depois da rodada de apostas, o dealer coloca mais uma carta comunitária virada para cima no centro da mesa. Isso é conhecido como o turn. Novamente, os jogadores usam essa carta em conjunto com suas cartas de mão para formar sua mão final.
+
+As apostas continuam:
+Uma nova rodada de apostas começa, seguindo o mesmo processo da rodada anterior.
+
+O river:
+Depois da rodada de apostas do turn, o dealer coloca a última carta comunitária virada para cima no centro da mesa. Isso é conhecido como o river. Agora, os jogadores têm todas as três cartas comunitárias e suas duas cartas de mão para formar a melhor mão possível.
+
+A última rodada de apostas:
+Uma última rodada de apostas começa, seguindo o mesmo processo das rodadas anteriores.
+
+Showdown: Se mais de um jogador permanecer na rodada final de apostas, eles devem mostrar suas cartas para determinar quem tem a melhor mão.

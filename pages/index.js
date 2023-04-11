@@ -1,12 +1,9 @@
 import Head from 'next/head'
-import Image from 'next/image'
-import whatsLogo from '../public/whatsAppLogo.png'
 import { Inter } from 'next/font/google'
-import MyDropdown from './components/MyDropDown'
 import HeaderPage from './components/HeaderPage'
-import footerPage from './components/footerPage'
+import FooterPage from './components/FooterPage'
+import HomePage from './HomePage'
 import styles from '@/styles/Home.module.css'
-
 const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
@@ -18,19 +15,11 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <div className="bg-blue-500">
+      <div className="bg-blue-100">
       <HeaderPage/>
-      <MyDropdown/>
-      <footerPage/>
+      <HomePage/>
+      <FooterPage/>
       </div>
-      {/* <main className="bg-blue-500">
-        <div className="bg-blue-500">
-        <h1 className="text-3xl font-bold underline">BrotherHood Poker Club</h1>
-        <p></p>
-        <a href="https://web.whatsapp.com/send?phone=5511988362072">Entre em contato conosco pelo WhatsApp</a>
-        <Image src={whatsLogo} alt='Whatsapp' width={300} height={150} />
-        </div>
-      </main> */}
     </>
   )
 }
