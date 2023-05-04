@@ -5,9 +5,9 @@ import MyDropdown from './MyDropDown'
 export default function HeaderPage() {
     return (
         <div className='flex justify-center rounded-full '>
-            <Image src={whatsLogo} alt='brotherhoodlogo' width={500} height={150}>
+            <Image src={whatsLogo} alt='brotherhoodlogo' width={250} height={250}>
             </Image>
-            <MyDropdown/>
+            {/* <MyDropdown/> */}
         </div>
     )
   }

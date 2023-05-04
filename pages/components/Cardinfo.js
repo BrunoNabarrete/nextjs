@@ -4,11 +4,12 @@ import omaha from '../../public/omaha.jpeg'
 
 export default function cardInfo () {
     return (
+        <div className='flex justify-center'>
 
-        <div className='flex flex-nowrap'>
+        <div className='flex flex-nowrap flex space-x-52 '>
             <div class="basics-1/2 max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
             <a href="#">
-                <Image class="rounded-t-lg" src={texasHold} alt="texasHold" />
+                <Image class="rounded-t-lg w-full aspect-video" src={texasHold} alt="texasHold" />
             </a>
             <div class="p-5">
                 <a href="#">
@@ -42,7 +43,7 @@ export default function cardInfo () {
         
         <div class="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
                 <a href="#">
-                    <Image class="rounded-t-lg" src={omaha} alt="Omaha poker" />
+                    <Image class="rounded-t-lg w-full aspect-video" src={omaha} alt="Omaha poker" />
                 </a>
                 <div class="p-5">
                     <a href="#">
@@ -64,6 +65,7 @@ export default function cardInfo () {
                 </div>
             </div>
             </div>
+        </div>
         
 
     )

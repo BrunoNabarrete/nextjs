@@ -18,13 +18,15 @@ export default function FooterPage() {
             <h1>
                 Siga o BrotherHood Club nas redes sociais
             </h1>
-            <a href="https://web.whatsapp.com/send?phone=5511988362072">
-                <Image src={whatsapp} alt='whatslogo' height={100} width={100}/>
-            </a>
+            <div className='flex justify-center col-span-1 border-2 border-black'>
+                <a href="https://web.whatsapp.com/send?phone=5511988362072">
+                <Image src={whatsapp} alt='whatslogo' height={50} width={50}/>
+                </a>
 
-            <a href='https://www.instagram.com/brotherhood_poker/'>
-                <Image src={instagram} alt='instagram' height={100} width={100}/>
-            </a>
+                <a href='https://www.instagram.com/brotherhood_poker/'>
+                <Image src={instagram} alt='instagram' height={50} width={50}/>
+                </a>
+            </div>
             <h1>
             </h1>
             </div>

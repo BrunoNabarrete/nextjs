@@ -36,13 +36,21 @@ export default function homePage() {
         </span>
     </button>
     </div>
-    <div>
-        <h2>
-            Bem-vindo ao Poker Online
-        </h2>
-        <h3>
-        Bem-vindo ao nosso clube de poker BrotherHood! É ótimo tê-lo aqui e esperamos que você se divirta muito jogando conosco. Estamos comprometidos em fornecer um ambiente amigável e justo para todos os nossos jogadores, onde o respeito e a honestidade são valorizados. Seja você um jogador experiente ou um iniciante, estamos aqui para ajudá-lo a melhorar suas habilidades e aproveitar ao máximo cada jogo. Boa sorte nas suas jogadas!
-        </h3>
+
+    <div className='w-full'>
+        <div className='flex justify-center flex border-2 border-black'>
+
+            <h2>
+                Bem-vindo ao Poker Online BrotherHood Poker
+            </h2>
+        </div>
+        <div className='flex justify-center flex border-2 border-black px-96 '>
+
+            <h3>
+            É ótimo tê-lo aqui e esperamos que você se divirta muito jogando conosco. Estamos comprometidos em fornecer um ambiente amigável e justo para todos os nossos jogadores, onde o respeito e a honestidade são valorizados. Seja você um jogador experiente ou um iniciante, estamos aqui para ajudá-lo a melhorar suas habilidades e aproveitar ao máximo cada jogo. Boa sorte nas suas jogadas!
+            </h3>
+        </div>
+
     </div>
     <div>
         <h2>
