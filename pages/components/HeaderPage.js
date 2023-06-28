@@ -30,7 +30,7 @@ export default function HeaderPage() {
                         Home
                     </Navbar.Link>
                     <Navbar.Link id='aboutButton' onClick={(e) => scrollBottom(e)}>
-                        About
+                        Sobre
                     </Navbar.Link>
                     <Navbar.Link href="#">
                         Services
