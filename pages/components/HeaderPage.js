@@ -4,6 +4,14 @@ import { Navbar } from 'flowbite-react';
 import classNames from '../../styles/Header.module.scss'
 
 export default function HeaderPage() {
+    const scrollBottom = () => {
+        const element = document.getElementById('aboutButton')
+        window.scrollBy({
+            top: 800,
+            behavior: 'smooth'
+        })
+    }
+
     return (
         <div className={classNames.header}>
             <Navbar theme={{ root: { base: 'px-2 py-2.5 sm:px-4' } }}>
@@ -21,7 +29,7 @@ export default function HeaderPage() {
                     <Navbar.Link active href="#">
                         Home
                     </Navbar.Link>
-                    <Navbar.Link href="#">
+                    <Navbar.Link id='aboutButton' onClick={(e) => scrollBottom(e)}>
                         About
                     </Navbar.Link>
                     <Navbar.Link href="#">

@@ -18,20 +18,20 @@ export default function homePage() {
             }}>
                 <div className={classNames.ppokerSlide}>
                     <div className="container mx-auto">
-                        <h2>PP Poker <br /> Club</h2>
-                        <h4>Teste apenas</h4>
+                        <h2>PPPoker <br /> Club</h2>
+                        <h4>Club ID: 2512171</h4>
                     </div>
                 </div>
                 <div className={classNames.supremaSlide}>
                     <div className="container mx-auto">
                         <h2>Suprema <br />Poker</h2>
-                        <h4>Teste apenas</h4>
+                        <h4>Club ID: 2512171</h4>
                     </div>
                 </div>
                 <div className={classNames.cachetaSlide}>
                     <div className="container mx-auto">
-                        <h2>Cacheta <br />Online</h2>
-                        <h4>Teste apenas</h4>
+                        <h2>Cacheta League <br />Brazil</h2>
+                        <h4>Club ID: 867972</h4>
                     </div>
                 </div>
             </Carousel>
