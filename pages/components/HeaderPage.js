@@ -1,11 +1,10 @@
-import whatsLogo from '../../public/brotherhoodlogo.jpeg'
+import whatsLogo from '../../public/logovetorizada.png'
 import Image from 'next/image'
 import { Navbar } from 'flowbite-react';
 import classNames from '../../styles/Header.module.scss'
 
 export default function HeaderPage() {
     const scrollBottom = () => {
-        const element = document.getElementById('aboutButton')
         window.scrollBy({
             top: 800,
             behavior: 'smooth'
@@ -19,7 +18,7 @@ export default function HeaderPage() {
                     <Image
                         alt="BrotherHood Logo"
                         src={whatsLogo}
-                        height={60}
+                        height={80}
                     />
                 </Navbar.Brand>
 
