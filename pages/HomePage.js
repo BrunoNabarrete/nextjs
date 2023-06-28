@@ -1,7 +1,5 @@
 import { Carousel } from 'flowbite-react'
-import pppoker from '../public/pppokerResoluçãoMelhor.webp'
-import suprema from '../public/supremaImagem2.jpg'
-import cacheta from '../public/cachetaImagem2.jpg'
+
 import Image from 'next/image'
 import CardInfo from './components/Cardinfo'
 import classNames from '../styles/Home.module.scss';
