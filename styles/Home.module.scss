@@ -3,7 +3,7 @@
 @tailwind utilities; */
 
 .slide {
-    height: 800px;
+    height: 1000px;
 }
 
 .ppokerSlide,
@@ -14,7 +14,7 @@
     color: #FFF;
     display: flex;
     align-items: center;
-    height: 800px;
+    height: 1000px;
 
     &::before {
         content: "";
