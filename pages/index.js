@@ -13,7 +13,7 @@ export default function Home() {
         <title>BrotherHood Group</title>
         <meta name="description" content="Maior clube de poker no Brasil" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/logovetorizada.png" />
       </Head>
       <div className="bg-gray-900">
         <HeaderPage/>
