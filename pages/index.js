@@ -15,10 +15,10 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <div className="bg-blue-100">
-      <HeaderPage/>
-      <HomePage/>
-      <FooterPage/>
+      <div className="bg-gray-900">
+        <HeaderPage/>
+        <HomePage/>
+        <FooterPage/>
       </div>
     </>
   )
