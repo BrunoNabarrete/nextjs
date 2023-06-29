@@ -6,7 +6,7 @@ import classNames from '../../styles/Header.module.scss'
 export default function HeaderPage() {
     const scrollBottom = () => {
         window.scrollBy({
-            top: 1000,
+            top: 700,
             behavior: 'smooth'
         })
     }

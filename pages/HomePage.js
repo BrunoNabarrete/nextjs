@@ -40,10 +40,22 @@ export default function homePage() {
                 </h3>
 
                 <p className="text-center text-xl text-white">
-                É ótimo tê-lo aqui e esperamos que você se divirta muito jogando conosco. Estamos comprometidos em fornecer um ambiente amigável e justo para todos os nossos jogadores, onde o respeito e a honestidade são valorizados. Seja você um jogador experiente ou um iniciante, estamos aqui para ajudá-lo a melhorar suas habilidades e aproveitar ao máximo cada jogo. Boa sorte nas suas jogadas!
+                    É ótimo tê-lo aqui e esperamos que você se divirta muito jogando conosco. Estamos comprometidos em fornecer um ambiente amigável e justo para todos os nossos jogadores, onde o respeito e a honestidade são valorizados. Seja você um jogador experiente ou um iniciante, estamos aqui para ajudá-lo a melhorar suas habilidades e aproveitar ao máximo cada jogo. Boa sorte nas suas jogadas!
                 </p>
             </div>
             <div className='container mx-auto'>
+                <article class="md:flex items-center bg-slate-100 rounded-xl p-8 md:p-8 dark:bg-slate-800 mt-8">
+                    <img class="w-48 h-48 md:w-48 rounded-full mx-auto" src="https://cdn-icons-png.flaticon.com/512/3791/3791606.png" alt="Trophy Icon" width="384" height="384" />
+                    <div class="pt-6 md:p-8 text-center md:text-left space-y-4">
+                        <h4 className="text-2xl text-sky-400 font-bold mb-8">
+                            Os melhores torneios do Poker Online
+                        </h4>
+
+                        <p class="text-lg text-slate-300">
+                        Descubra os melhores torneios de poker online em nossa plataforma! Com mesas de alta qualidade, grandes prêmios em dinheiro e suporte ao cliente eficiente, oferecemos uma experiência emocionante. Junte-se a nós agora e experimente a emoção dos melhores torneios de poker online!
+                        </p>
+                    </div>
+                </article>
                 <div className="flex items-center">
                     <Image />
                     <div>
@@ -51,7 +63,7 @@ export default function homePage() {
                             Os melhores torneios do Poker Online
                         </h3>
                         <p className="text-white">
-                            Aqui é onde você encontrará os melhores torneios de poker na internet! Nossos torneios são projetados para oferecer aos jogadores uma experiência de jogo emocionante e imersiva, com mesas de alta qualidade e revendedores profissionais. Oferecemos uma ampla variedade de jogos, desde os torneios mais populares até os eventos mais exclusivos e desafiadores, com grandes prêmios em dinheiro e entradas com diferentes valores. Nossa plataforma online é segura e confiável, com um sistema de segurança avançado que protege seus dados pessoais e bancários. Além disso, oferecemos uma equipe de suporte ao cliente amigável e eficiente, pronta para ajudar com qualquer dúvida ou problema que você possa ter. Venha jogar conosco e experimente a emoção dos melhores torneios de poker online!
+                            
                         </p>
                     </div>
                 </div>
@@ -62,7 +74,8 @@ export default function homePage() {
                             Melhor Cash Game
                         </h3>
                         <p className="text-white">
-                            Venha jogar conosco e experimente a emoção dos nossos jogos de cash game de poker online! Temos uma ampla variedade de jogos disponíveis, com mesas para jogadores iniciantes e experientes. Oferecemos limites de aposta baixos e altos, para que você possa escolher o jogo que melhor se adapta ao seu nível de habilidade e à sua bancada. Nossa plataforma online é segura e confiável, com uma interface fácil de usar que torna a navegação simples e intuitiva. Além disso, nossos jogos são totalmente justos e aleatórios, graças a um sistema de gerador de números aleatórios rigoroso e independente. Nós também oferecemos bônus e promoções exclusivas para os nossos jogadores de cash game, então não perca a oportunidade de aumentar sua banca e ganhar ainda mais jogando com a gente. Venha jogar e experimentar a emoção dos nossos jogos de cash game de poker online!
+                           
+                            Jogue conosco e experimente a emoção dos jogos de cash game de poker online! Oferecemos uma ampla variedade de jogos com diferentes limites de aposta, adequados para jogadores de todos os níveis. Nossa plataforma é segura, intuitiva e os jogos são justos. Aproveite também nossos bônus e promoções exclusivas para aumentar suas chances de ganhar. Venha jogar e vivencie a emoção dos nossos jogos de cash game de poker online!
                         </p>
                     </div>
                 </div>
