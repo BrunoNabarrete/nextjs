@@ -7,7 +7,7 @@ export default function Header() {
     return (
         <>
             <Navbar />
-            <Carousel slide={false} slideInterval={7000} theme={{ 
+            <Carousel slide={true} slideInterval={7000} theme={{ 
                 root: { 
                     base: `${classNames.slide} relative w-full` 
                 } 
