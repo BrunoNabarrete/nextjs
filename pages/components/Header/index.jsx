@@ -38,7 +38,7 @@ export default function Header() {
                         <div className="max-w-xl">
                             <p className="text-lg">Jogue em uma das maiores plataformas de cacheta do Brasil.</p>
                             <p className="text-2xl mt-4 mb-4">A <strong>Cacheta League</strong> é uma plataforma de cacheta online que oferece uma experiência de jogo única e exclusiva.</p>
-                            <p className="text-lg"><strong>Club ID</strong>: 2512171</p>
+                            <p className="text-lg"><strong>Club ID</strong>: 897672</p>
                         </div>
                     </div>
                 </div>
