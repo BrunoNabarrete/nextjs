@@ -1,8 +1,10 @@
-import Head from 'next/head'
-import { Inter } from 'next/font/google'
-import HeaderPage from './components/HeaderPage'
-import FooterPage from './components/FooterPage'
-import HomePage from './HomePage'
+import Head from 'next/head';
+import { Inter } from 'next/font/google';
+import GameCards from './components/GameCards'
+import WelcomeSection from './components/WelcomeSection'
+import Header from './components/Header'
+import Footer from './components/Footer'
+
 const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
@@ -15,9 +17,10 @@ export default function Home() {
         <link rel="icon" href="/logovetorizada.png" />
       </Head>
       <div className="bg-gray-900">
-        <HeaderPage/>
-        <HomePage/>
-        <FooterPage/>
+        <Header />
+        <WelcomeSection />
+        <GameCards />
+        <Footer />
       </div>
     </>
   )

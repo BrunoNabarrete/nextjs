@@ -26,7 +26,7 @@
         top: 0;
         left: 0;
         z-index: -1;
-        opacity: 0.3;
+        opacity: 0.4;
     }
 
     h2 {
@@ -34,8 +34,13 @@
         font-size: 62px;
         font-weight: bold;
         text-transform: uppercase;
-        line-height: 65px;
+        line-height: 45px;
         margin-bottom: 20px;
+
+        & > span {
+            font-size: 40px;
+            line-height: 40px;
+        }
     }
 
     h4 {
@@ -49,11 +54,11 @@
 }
 
 .ppokerSlide::before {
-    background-image: url('/PPPoker_icon.png');
+    background-image: url('https://cardplayer.com.br/static/imagens/noticias/grande/20122018_conheca-o-aplicativo-pppoker-e-comece-a-jogar-agora_6453g.jpg');
 }
 
 .supremaSlide::before {
-    background-image: url('/SUPREMA+ÍCONE(1).png');
+    background-image: url('https://mundopoker.com.br/wp-content/uploads/2021/06/DonkBet1.jpg');
 }
 
 .cachetaSlide::before {
