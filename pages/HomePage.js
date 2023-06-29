@@ -56,6 +56,19 @@ export default function homePage() {
                         </p>
                     </div>
                 </article>
+
+                <article class="md:flex items-center bg-slate-100 rounded-xl p-8 md:p-8 dark:bg-slate-800 mt-8">
+                    <img class="w-48 h-48 md:w-48 rounded-full mx-auto" src="https://cdn-icons-png.flaticon.com/512/3791/3791606.png" alt="Trophy Icon" width="384" height="384" />
+                    <div class="pt-6 md:p-8 text-center md:text-left space-y-4">
+                        <h4 className="text-2xl text-sky-400 font-bold mb-8">
+                            Os melhores torneios do Poker Online
+                        </h4>
+
+                        <p class="text-lg text-slate-300">
+                        Descubra os melhores torneios de poker online em nossa plataforma! Com mesas de alta qualidade, grandes prêmios em dinheiro e suporte ao cliente eficiente, oferecemos uma experiência emocionante. Junte-se a nós agora e experimente a emoção dos melhores torneios de poker online!
+                        </p>
+                    </div>
+                </article>
                 <div className="flex items-center">
                     <Image />
                     <div>
@@ -74,7 +87,6 @@ export default function homePage() {
                             Melhor Cash Game
                         </h3>
                         <p className="text-white">
-                           
                             Jogue conosco e experimente a emoção dos jogos de cash game de poker online! Oferecemos uma ampla variedade de jogos com diferentes limites de aposta, adequados para jogadores de todos os níveis. Nossa plataforma é segura, intuitiva e os jogos são justos. Aproveite também nossos bônus e promoções exclusivas para aumentar suas chances de ganhar. Venha jogar e vivencie a emoção dos nossos jogos de cash game de poker online!
                         </p>
                     </div>
