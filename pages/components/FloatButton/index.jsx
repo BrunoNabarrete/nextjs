@@ -5,7 +5,7 @@ import className from './Float.module.scss'
 export default function floatButton() {
     return (
         <div className={className.float}>
-            <a target="_blank" className="mr-3" href="https://web.whatsapp.com/send?phone=5511988362072">
+            <a target="_blank" className="mr-3 whatsapp-button" href="https://web.whatsapp.com/send?phone=5511988362072">
                 <Image src={whatsapp} alt='whatslogo' className={className.float} height={38} width={38} />
             </a>
         </div>
