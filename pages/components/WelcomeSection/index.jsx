@@ -1,8 +1,12 @@
 import Image from 'next/image'
+import FloatButton from '../FloatButton';
 
 export default function WelcomeSection() {
     return (
         <>
+            <FloatButton>
+
+            </FloatButton>
             <div className='container mx-auto p-4 md:p-0'>
                 <h3 id='welcome' className='text-center text-4xl text-white font-bold mt-20 mb-8'>
                     BEM VINDO
