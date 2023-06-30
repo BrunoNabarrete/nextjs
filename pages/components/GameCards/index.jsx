@@ -29,7 +29,7 @@ export default function GameCards () {
             </h3>
 
             <p className="text-center text-md md:text-xl text-white">
-                É possível jogar a sua modalidade favorita jogand conosco. Se você ainda não conhece todas, veja abaixo algumas delas.
+                É possível jogar a sua modalidade favorita jogando conosco. Se você ainda não conhece todas, veja abaixo algumas delas.
             </p>
 
             <div className='flex-nowrap md:flex mt-8'>
