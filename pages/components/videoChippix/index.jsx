@@ -14,8 +14,7 @@ export default function video() {
     return(
         <div className="text-center">
             <button onClick={(e) => mutedOrUnmuted(e)}>
-            <video id="video" loop autoPlay width={400} height={400} >
-                <source type="video/mp4" src="videoChippix.mp4"/>
+            <video id="video" playsInline src="videoChippix.mp4" loop autoPlay width={400} height={400} >
             </video>
 
             </button>
