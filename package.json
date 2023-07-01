@@ -12,6 +12,7 @@
     "@headlessui/react": "^1.7.13",
     "@heroicons/react": "^2.0.17",
     "@material-tailwind/react": "^1.4.2",
+    "@vercel/analytics": "^1.0.1",
     "eslint": "8.35.0",
     "eslint-config-next": "13.2.4",
     "flowbite": "^1.6.6",
