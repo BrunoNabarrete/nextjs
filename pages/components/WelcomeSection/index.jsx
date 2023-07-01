@@ -1,5 +1,6 @@
 import Image from 'next/image'
 import FloatButton from '../FloatButton';
+import VideoChippix from '../videoChippix';
 
 export default function WelcomeSection() {
     return (
@@ -44,6 +45,8 @@ export default function WelcomeSection() {
                     </div>
                     <Image className="hidden md:inline-block w-48 h-48 md:w-48 rounded-full mx-auto" src="https://cdn-icons-png.flaticon.com/512/1028/1028137.png" alt="Trophy Icon" width="384" height="384" />
                 </article>
+                <div>
+                </div>
             </div>
         </>
     );
