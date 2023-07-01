@@ -5,6 +5,7 @@ import WelcomeSection from './components/WelcomeSection'
 import Header from './components/Header'
 import Footer from './components/Footer'
 import VideoChippix from './components/videoChippix'
+import { Analytics } from '@vercel/analytics/react';
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -22,7 +23,7 @@ export default function Home() {
         <WelcomeSection />
         <VideoChippix/>
         <GameCards />
-        
+        <Analytics/>
         <Footer />
       </div>
     </>
