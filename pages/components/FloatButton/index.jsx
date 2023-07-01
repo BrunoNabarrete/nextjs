@@ -12,7 +12,7 @@ export default function floatButton() {
                 </a>
             </div>
             <div className={className.floatChippix}>
-                <a target="_blank" className="mr-3 whatsapp-button" href="chippix:/">
+                <a target="_blank" className="mr-3 whatsapp-button" href="https://play.google.com/store/apps/details?id=com.chippix.app or https://apps.apple.com/br/app/chippix/id1583837419">
                     <Image src={chippix} className={className.floatChippix} alt='chippix' height={38} width={38} />
                 </a>
             </div>
