@@ -20,8 +20,9 @@ export default function Home() {
       <div className="bg-gray-900">
         <Header />
         <WelcomeSection />
-        <GameCards />
         <VideoChippix/>
+        <GameCards />
+        
         <Footer />
       </div>
     </>

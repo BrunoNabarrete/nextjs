@@ -20,7 +20,7 @@ export default function Footer() {
                 <p className="font-bold font-xl">
                     Nos acompanhe nas redes sociais
                 </p>
-                <div className='flex mt-2'>
+                <div className='flex mt-2 mr-20'>
                     <a target="_blank" className="mr-3" href="https://web.whatsapp.com/send?phone=5511988362072">
                         <Image src={whatsapp} alt='whatslogo' className="rounded" height={38} width={38} />
                     </a>
