@@ -20,6 +20,12 @@ export default function Navbar() {
         })
     }
 
+    const scrollBottomVideo = () => {
+        document.querySelector('#video').scrollIntoView({
+            behavior: 'smooth'
+        })
+    }
+
 
     return (
         <div className={classNames.header}>
@@ -43,6 +49,9 @@ export default function Navbar() {
                     </FlowbiteNavbar.Link>
                     <FlowbiteNavbar.Link onClick={(e) => scrollBottomGames(e)}>
                         Jogos
+                    </FlowbiteNavbar.Link>
+                    <FlowbiteNavbar.Link onClick={(e) => scrollBottomVideo(e)}>
+                        chippix
                     </FlowbiteNavbar.Link>
                     <FlowbiteNavbar.Link onClick={(e) => scrollBottomContact(e)}>
                         Contato
