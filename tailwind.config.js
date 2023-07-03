@@ -11,7 +11,12 @@ module.exports = {
     "./src/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        'green-true': '#8cc63e',
+        'blue-true': '#262261',
+      }
+    },
   },
   plugins: [
     require("flowbite/plugin")

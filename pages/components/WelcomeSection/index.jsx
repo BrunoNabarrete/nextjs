@@ -1,6 +1,7 @@
 import Image from 'next/image'
 import FloatButton from '../FloatButton';
-import VideoChippix from '../videoChippix';
+import torneioPoker from '../../../public/Torneios.png';
+import cashGamePoker from '../../../public/CashGame.png';
 
 export default function WelcomeSection() {
     return (
@@ -20,7 +21,7 @@ export default function WelcomeSection() {
             </div>
             <div className='container mx-auto p-4 md:p-0'>
                 <article className="md:flex items-center bg-slate-100 rounded-xl p-8 md:p-8 dark:bg-slate-800 mt-8">
-                    <Image className="w-48 h-48 md:w-48 rounded-full mx-auto" src="https://cdn-icons-png.flaticon.com/512/3791/3791606.png" alt="Trophy Icon" width="384" height="384" />
+                    <Image className="w-48 h-48 md:w-48 rounded-full mx-auto" src={torneioPoker} alt="Trophy Icon" width="384" height="384" />
                     <div className="pt-6 md:p-8 text-center md:text-left space-y-4">
                         <h4 className="text-2xl text-sky-400 font-bold mb-8">
                             Os melhores torneios do Poker Online
@@ -43,7 +44,7 @@ export default function WelcomeSection() {
                         Participe de nossos jogos de cash game de poker online e desfrute da emoção! Oferecemos uma ampla variedade de jogos com diferentes limites de aposta, adequados para jogadores de todos os níveis. Nossa plataforma é segura, intuitiva e os jogos são justos. Não deixe de aproveitar nossos bônus e promoções exclusivas para aumentar suas chances de ganhar. Venha jogar e vivencie a emoção dos nossos jogos de cash game de poker online!    
                         </p>
                     </div>
-                    <Image className="hidden md:inline-block w-48 h-48 md:w-48 rounded-full mx-auto" src="https://cdn-icons-png.flaticon.com/512/1028/1028137.png" alt="Trophy Icon" width="384" height="384" />
+                    <Image className="hidden md:inline-block w-48 h-48 md:w-48 rounded-full mx-auto" src={cashGamePoker} alt="Trophy Icon" width="384" height="384" />
                 </article>
                 <div>
                 </div>
