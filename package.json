@@ -9,9 +9,13 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@emotion/react": "^11.11.1",
+    "@emotion/styled": "^11.11.0",
     "@headlessui/react": "^1.7.13",
     "@heroicons/react": "^2.0.17",
     "@material-tailwind/react": "^1.4.2",
+    "@mui/icons-material": "^5.11.16",
+    "@mui/material": "^5.13.6",
     "@vercel/analytics": "^1.0.1",
     "eslint": "8.35.0",
     "eslint-config-next": "13.2.4",
