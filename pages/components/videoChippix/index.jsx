@@ -20,7 +20,7 @@ export default function Video() {
     const toggleMuted = () => setMuted(s => !s);
 
     return(
-        <div className="py-20 px-10 md:px-20 mt-20 md:mb-12 bg-slate-800">
+        <div id='videoDiv' className="py-20 px-10 md:px-20 mt-20 md:mb-12 bg-slate-800">
             <div className="container mx-auto items-center flex-wrap flex md:flex-nowrap justify-center">
                 <div className={classes.videoContainer}>
                     <video ref={ref} src="videoChippix.mp4" autoplay='autoplay' muted={muted} loop playsinline width={480} height={400} />
