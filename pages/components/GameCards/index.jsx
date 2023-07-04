@@ -16,14 +16,14 @@ const data = [
     {
         id:1,
         image: texasHold,
-        title: 'Texas Hold em',
-        description: `Texas Hold em Poker é um jogo de cartas emocionante e popular que pode ser jogado com dois a dez jogadores. Aqui está um resumo rápido de como jogar Texas Hold em Poker:As apostas iniciais: O jogo começa com cada jogador colocando uma aposta inicial chamada blind pequena ou grande. Distribuição de cartas: Cada jogador recebe duas cartas conhecidas como cartas de buraco ou hole cards. Pré-flop: O jogador à esquerda do jogador da grande blind começa a ação. Os jogadores podem optar por igualar match a aposta da grande blind, aumentar raise ou desistir fold de suas mãos. O flop: Depois que todas as apostas pré-flop são concluídas, o dealer coloca três cartas comunitárias na mesa, conhecidas como flop. Os jogadores podem usar essas cartas, juntamente com suas cartas de buraco, para formar uma mão de poker de cinco cartas. O turn: Depois que a rodada de apostas do flop é concluída, o dealer adiciona uma quarta carta comunitária na mesa, conhecida como turn. O river: Depois que a rodada de apostas do turn é concluída, o dealer adiciona a quinta e última carta comunitária na mesa,conhecida como river. A última rodada de apostas: Após a carta do river ser distribuída, ocorre a última rodada de apostas. Os jogadores podem apostar, aumentar, igualar ou desistir. O showdown: Se mais de um jogador permanecer após a última rodada de apostas, as mãos são reveladas e o jogador com a melhor mão de poker de cinco cartas vence o pote. Se um jogador fizer uma aposta que os outros jogadores não igualarem, ele ganha o pote sem ter que mostrar suas cartas. Espero que isso ajude você a entender o básico do jogo de Texas Hold em Poker. Boa sorte e divirta-se!`,
+        title: "Texas Hold'em",
+        description: `Texas Hold'em Poker é um jogo de cartas emocionante e popular que pode ser jogado com dois a dez jogadores. Aqui está um resumo rápido de como jogar Texas Hold em Poker:As apostas iniciais: O jogo começa com cada jogador colocando uma aposta inicial chamada blind pequena ou grande. Distribuição de cartas: Cada jogador recebe duas cartas conhecidas como cartas de buraco ou hole cards. Pré-flop: O jogador à esquerda do jogador da grande blind começa a ação. Os jogadores podem optar por igualar match a aposta da grande blind, aumentar raise ou desistir fold de suas mãos. O flop: Depois que todas as apostas pré-flop são concluídas, o dealer coloca três cartas comunitárias na mesa, conhecidas como flop. Os jogadores podem usar essas cartas, juntamente com suas cartas de buraco, para formar uma mão de poker de cinco cartas. O turn: Depois que a rodada de apostas do flop é concluída, o dealer adiciona uma quarta carta comunitária na mesa, conhecida como turn. O river: Depois que a rodada de apostas do turn é concluída, o dealer adiciona a quinta e última carta comunitária na mesa,conhecida como river. A última rodada de apostas: Após a carta do river ser distribuída, ocorre a última rodada de apostas. Os jogadores podem apostar, aumentar, igualar ou desistir. O showdown: Se mais de um jogador permanecer após a última rodada de apostas, as mãos são reveladas e o jogador com a melhor mão de poker de cinco cartas vence o pote. Se um jogador fizer uma aposta que os outros jogadores não igualarem, ele ganha o pote sem ter que mostrar suas cartas. Espero que isso ajude você a entender o básico do jogo de Texas Hold em Poker. Boa sorte e divirta-se!`,
     },
     {   
         id:2,
         image: omaha,
         title: 'Omaha',
-        description: `O Omaha poker é uma variação do jogo de cartas poker. É jogado com um baralho de 52 cartas e pode ser jogado por duas a dez pessoas. O objetivo do jogo é ganhar o pote, que é o dinheiro apostado pelos jogadores durante a partida. Cada jogador recebe quatro cartas de mão, e cinco cartas comunitárias são colocadas na mesa. Os jogadores usam duas cartas de mão e três cartas comunitárias para formar a melhor mão de cinco cartas possível. Uma rodada de apostas acontece após a distribuição das cartas e após cada uma das três primeiras cartas comunitárias serem reveladas. Uma última rodada de apostas acontece após a quinta e última carta comunitária ser revelada. O jogador com a melhor mão de cinco cartas ganha o pote. A classificação das mãos é a mesma do poker tradicional.`,
+        description: `O Omaha Poker é uma empolgante variação do jogo de cartas poker. Assim como o poker tradicional, é jogado com um baralho padrão de 52 cartas, mas tem algumas diferenças significativas nas regras. O jogo pode ser jogado por duas a dez pessoas, o que proporciona uma dinâmica animada. O objetivo do Omaha Poker é conquistar o pote, que é o dinheiro apostado pelos jogadores durante a partida. No início do jogo, cada jogador recebe um conjunto de quatro cartas pessoais, conhecidas como "cartas de mão". Em seguida, cinco cartas comunitárias são colocadas na mesa. O desafio está em usar exatamente duas das cartas de mão e três das cartas comunitárias para formar a melhor combinação possível de cinco cartas. Após a distribuição das cartas e a revelação das três primeiras cartas comunitárias, ocorre uma rodada de apostas. Os jogadores têm a oportunidade de apostar, aumentar ou desistir, com base em suas mãos e nas possibilidades que enxergam. Em seguida, uma quarta carta comunitária é revelada, seguida por outra rodada de apostas. Por fim, a quinta e última carta comunitária é revelada, e uma última rodada de apostas ocorre. No desfecho do jogo, a mão do jogador com a melhor combinação de cinco cartas leva o pote. A classificação das mãos segue as mesmas regras do poker tradicional, onde as combinações vencedoras são determinadas por sua força, desde um par até uma sequência real (royal flush). O Omaha Poker oferece uma experiência emocionante e estratégica, exigindo dos jogadores um bom conhecimento das probabilidades, leitura de mãos e habilidades de tomada de decisão. É uma opção popular entre os entusiastas do poker, que buscam desafios adicionais e a oportunidade de ganhar grandes prêmios em dinheiro.`,
     },
     {   
         id:3,
@@ -35,31 +35,29 @@ const data = [
 
 export default function GameCards () {
     const refs = React.useRef(data.map(() => React.createRef()));
-  const [open, setOpen] = React.useState(false);
-  const [scroll, setScroll] = React.useState('paper');
-  const [selectedId, setSelectedId] = React.useState(null);
+    const [open, setOpen] = React.useState(false);
+    const [scroll, setScroll] = React.useState('paper');
+    const [selectedId, setSelectedId] = React.useState(null);
 
-  const handleClickOpen = (scrollType, id) => () => {
+    const handleClickOpen = (scrollType, id) => () => {
     setOpen(true);
     setScroll(scrollType);
     setSelectedId(id);
-  };
+    };
 
-  console.log(selectedId)
-  const handleClose = () => {
+    const handleClose = () => {
     setOpen(false);
-  };
-  
+    };
     const descriptionElementRef = React.useRef();
     React.useEffect(() => {
         if (open) {
             let { current: descriptionElement } = descriptionElementRef;
             if (descriptionElement !== null) {
-        //   descriptionElement.focus();
+            descriptionElement.focus();
         }
-      }
+    }
     }, [open]);
-  
+
 
     return (
         <div id="jogos" className='container mx-auto p-4 md:p-0'>
