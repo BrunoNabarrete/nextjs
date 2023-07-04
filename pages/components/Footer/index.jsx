@@ -21,7 +21,7 @@ export default function Footer() {
                     Nos acompanhe nas redes sociais
                 </p>
                 <div className='flex mt-2 mr-20'>
-                    <a target="_blank" className="mr-3" href="https://web.whatsapp.com/send?phone=5511988362072">
+                    <a target="_blank" className="mr-3" href="whatsapp://send?phone=5511988362072&text=Olá%20vim%20pelo%20site%20para%20fazer%20parte%20do%20clube!!!">
                         <Image src={whatsapp} alt='whatslogo' className="rounded" height={38} width={38} />
                     </a>
 
