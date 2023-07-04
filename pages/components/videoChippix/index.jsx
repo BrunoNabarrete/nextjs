@@ -56,7 +56,7 @@ export default function Video() {
                         Adquira fichas instantaneamente com o Chippix!
                     </h3>
                     <p className="text-xl text-gray-400 mb-6">Comece a jogar com o Clube de Poker Brotherhood e faça suas compras ou retiradas de fichas sem atrasos.</p>
-                    <a target='_blank' href="https://web.whatsapp.com/send?phone=5511988362072&text=Olá%20vim%20pelo%20site%20para%20fazer%20parte%20do%20clube%20e%20cadastrar%20no%20chippix!!!" className="inline-flex items-center px-4 py-3 text-lg font-medium text-center text-white rounded-lg bg-fuchsia-600 hover:bg-fuchsia-700 focus:ring-4 focus:outline-none focus:ring-blue-300">
+                    <a target='_blank' href="whatsapp://send?phone=5511988362072&text=Olá,%20vim%20pelo%20site%20para%20fazer%20parte%20do%20clube%20e%20cadastrar%20no%20chippix!!!" className="inline-flex items-center px-4 py-3 text-lg font-medium text-center text-white rounded-lg bg-fuchsia-600 hover:bg-fuchsia-700 focus:ring-4 focus:outline-none focus:ring-blue-300">
                         COMECE AGORA
                     </a>
                 </div>
