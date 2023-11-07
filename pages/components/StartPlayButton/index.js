@@ -2,8 +2,11 @@ export default function StartButtonPlay() {
   return (
     <div className="py-20 px-5 md:px-20 md:mb-12 bg-slate-800">
       <h3 className="text-center w-full text-4xl text-white font-bold mb-8">
-        DEPÓSITO E DÚVIDAS 24 HORAS!
+        CHAME A GENTE E SOLICITE SEU BÔNUS!
       </h3>
+      <p className="text-center w-full text-lg text-white font-medium mb-8">
+        Fale com a gente pelo whatsapp, atendimento 24 horas!
+      </p>
       <div className="flex items-center justify-center">
 
       <a target='_blank' href="whatsapp://send?phone=5511988362072&text=Olá,%20vim%20pelo%20site%20para%20fazer%20parte%20do%20clube%20e%20cadastrar%20no%20chippix!!!" 
