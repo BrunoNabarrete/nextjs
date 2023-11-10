@@ -2,13 +2,12 @@ import Logo from '../public/logoparapagewhats.jpeg';
 import Image from 'next/image';
 
 export default function WhatsPage() {
-  const whatsAppLink = 'https://api.whatsapp.com/send?phone=5511988362072&text=Oi,%20vi%20o%20an%C3%BAncio%20e%20quero%20saber%20como%20jogar%20no%20clube%20de%20voc%C3%AAs!';
   return (
     <div className="font-sans text-lg ">
       <div className='flex justify-center mt-2'>
         <Image className='' height={100} src={Logo} alt="Chippix Logo" />
       </div>
-      <div className='flex text-center mt-8 w-full md:justify-center'>
+      <div className='flex text-center mt-8 w-full md:justify-center ml-4'>
         <p>Conversar com +55 11 98836-2072 no WhatsApp</p>
       </div>
       <div className='flex justify-center mt-8'>
