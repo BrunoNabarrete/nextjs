@@ -15,6 +15,8 @@ module.exports = {
       colors: {
         'green-true': '#8cc63e',
         'blue-true': '#262261',
+        'blue-whats': '#39b3ed',
+        'green-button': '#128c7e;',
       }
     },
   },
