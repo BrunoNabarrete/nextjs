@@ -1,15 +1,15 @@
 import React, { useState } from 'react';
 
 export default function Forminfo() {
-  const [nomeRua, setNomeRua] = useState('rua das violetas');
-  const [nome, setNome] = useState('bruno nabarrete');
-  const [cep, setCep] = useState('9176190');
-  const [numero, setNumero] = useState(266);
-  const [bairro, setBairro] = useState('vila marina');
-  const [cidade, setCidade] = useState('santo andre');
-  const [estado, setEstado] = useState('sp');
-  const [complemento, setComplemento] = useState('apto02');
-  const [telefone, setTelefone] = useState('11996486375');
+  const [nomeRua, setNomeRua] = useState('');
+  const [nome, setNome] = useState('');
+  const [cep, setCep] = useState('');
+  const [numero, setNumero] = useState();
+  const [bairro, setBairro] = useState('');
+  const [cidade, setCidade] = useState('');
+  const [estado, setEstado] = useState('');
+  const [complemento, setComplemento] = useState('');
+  const [telefone, setTelefone] = useState('');
   
   const handleSubmit = async (e) => {
     e.preventDefault();
