@@ -1,5 +1,4 @@
 import React from "react";
-// import Logo from "../../../../public/octo-image.png";
 import ImagemBone from "../../../../public/ImagemBone.jpeg";
 import Image from "next/image";
 

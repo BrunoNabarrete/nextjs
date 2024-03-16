@@ -1,5 +1,5 @@
 import FormContact from './FormContact';
-import Forminfo from './Forminfo';
+import FormInfo from './FormularioInfo';
 
 export default function FormularioBone() {
   return (
@@ -8,7 +8,7 @@ export default function FormularioBone() {
       <div className='min-h-screen bg-gray-200 flex justify-center'>
         <div className='w-4/5 shadow-lg rounded-lg overflow-hidden md:flex md:flex-wrap"'>
           <FormContact />
-          <Forminfo />
+          <FormInfo />
         </div>
       </div>
     </div>
