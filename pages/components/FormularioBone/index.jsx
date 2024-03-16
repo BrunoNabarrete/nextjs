@@ -1,5 +1,5 @@
-import Forminfo from './Forminfo';
 import FormContact from './FormContact';
+import Forminfo from './Forminfo';
 
 export default function FormularioBone() {
   return (
