@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-export default function Forminfo() {
+export default function formInfo() {
   const [nomeRua, setNomeRua] = useState('rua das violetas');
   const [nome, setNome] = useState('bruno nabarrete');
   const [cep, setCep] = useState('9176190');
