@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-
+import { FormularioBone } from "./components/FormularioBone";
 
 
 export default function Formulario() {
@@ -30,13 +30,7 @@ export default function Formulario() {
   return (
     <div className=''>
       <h1>Formulário</h1>
-      {entregas.map((entrega) => (
-        <div key={entrega.id}>
-          <h1>{entrega.nome}</h1>
-          <p>{entrega.endereco}</p>
-        </div>
-      ))
-      }
+      <FormularioBone />
     </div>
   );
 }
