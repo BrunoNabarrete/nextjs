@@ -57,6 +57,7 @@ export default function Forminfo() {
               className='py-2 px-3 block border rounded-md text-black text-sm focus:border-blue-500 focus:ring-blue-500' 
               type="text" 
               value={nome} 
+              required
               onChange={(e) => setNome(e.target.value)} 
             />
           </div>
@@ -66,6 +67,7 @@ export default function Forminfo() {
               id="rua"
               className='py-2 px-3 block border rounded-md text-black text-sm focus:border-blue-500 focus:ring-blue-500' 
               type="text" 
+              required
               value={nomeRua} 
               onChange={(e) => setNomeRua(e.target.value)} 
             />
@@ -75,7 +77,8 @@ export default function Forminfo() {
             <input 
               id="numero"
               className='py-2 px-3 block border rounded-md text-black text-sm focus:border-blue-500 focus:ring-blue-500' 
-              type="text" 
+              type="tel" 
+              required
               value={numero} 
               onChange={(e) => setNumero(e.target.value)} 
             />
@@ -96,6 +99,7 @@ export default function Forminfo() {
               id="bairro"
               className='py-2 px-3 block border rounded-md text-black text-sm focus:border-blue-500 focus:ring-blue-500' 
               type="text" 
+              required
               value={bairro} 
               onChange={(e) => setBairro(e.target.value)} 
             />
@@ -106,6 +110,7 @@ export default function Forminfo() {
               id="cidade"
               className='py-2 px-3 block border rounded-md text-black text-sm focus:border-blue-500 focus:ring-blue-500' 
               type="text" 
+              required
               value={cidade} 
               onChange={(e) => setCidade(e.target.value)} 
             />
@@ -116,6 +121,7 @@ export default function Forminfo() {
               id="estado"
               className='py-2 px-3 block border rounded-md text-black text-sm focus:border-blue-500 focus:ring-blue-500' 
               type="text" 
+              required
               value={estado} 
               onChange={(e) => setEstado(e.target.value)} 
             />
@@ -126,6 +132,7 @@ export default function Forminfo() {
               id="cep"
               className='py-2 px-3 block border rounded-md text-black text-sm focus:border-blue-500 focus:ring-blue-500' 
               type="text" 
+              required
               value={cep} 
               onChange={(e) => setCep(e.target.value)} 
             />
@@ -136,6 +143,7 @@ export default function Forminfo() {
               id="telefone"
               className='py-2 px-3 block border rounded-md text-black text-sm focus:border-blue-500 focus:ring-blue-500' 
               type="text" 
+              required
               value={telefone} 
               onChange={(e) => setTelefone(e.target.value)} 
             />
