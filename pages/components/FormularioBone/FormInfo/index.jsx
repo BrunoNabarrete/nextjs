@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import React, { useState } from 'react';
 
 export default function Forminfo() {
   const [nomeRua, setNomeRua] = useState('rua das violetas');
