@@ -4,6 +4,7 @@ export default function Forminfo() {
   const [nomeRua, setNomeRua] = useState('');
   const [nome, setNome] = useState('');
   const [cep, setCep] = useState('');
+  const [cpf, setCpf] = useState('');
   const [numero, setNumero] = useState();
   const [bairro, setBairro] = useState('');
   const [cidade, setCidade] = useState('');
@@ -11,6 +12,22 @@ export default function Forminfo() {
   const [complemento, setComplemento] = useState('');
   const [telefone, setTelefone] = useState('');
   
+  const handleInputChange = (event) => {
+    let value = event.target.value;
+    value = value.replace(/\D/g, ''); // Remove tudo que não é dígito
+    value = value.replace(/(\d{3})(\d)/, '$1.$2'); // Coloca um ponto depois dos três primeiros dígitos
+    value = value.replace(/(\d{3})(\d)/, '$1.$2'); // Coloca um ponto depois dos próximos três dígitos
+    value = value.replace(/(\d{3})(\d{1,2})$/, '$1-$2'); // Coloca um hífen antes dos últimos dois dígitos
+    setCpf(value);
+  };
+
+  const handleInputChangeCep = (event) => {
+    let value = event.target.value;
+    value = value.replace(/\D/g, ''); // Remove tudo que não é dígito
+    value = value.replace(/^(\d{5})(\d)/, '$1-$2'); // Adiciona o traço após os primeiros cinco dígitos
+    setCep(value);
+  };
+
   const handleSubmit = async (e) => {
     e.preventDefault();
 
@@ -18,6 +35,7 @@ export default function Forminfo() {
       nomePessoa: nome,
       nomeRua: nomeRua,
       numero: numero,
+      cpf: cpf,
       complemento: complemento,
       bairro: bairro,
       cidade: cidade,
@@ -25,6 +43,7 @@ export default function Forminfo() {
       cep: cep,
       telefonePessoa: telefone
     };
+
 
     try {
       const response = await fetch('http://localhost:8080/entregas', {
@@ -59,6 +78,18 @@ export default function Forminfo() {
               value={nome} 
               required
               onChange={(e) => setNome(e.target.value)} 
+            />
+          </div>
+          <div className='flex flex-col'>
+            <label htmlFor="cpf">CPF</label>
+            <input
+              id="cpf"
+              className='py-2 px-3 block border rounded-md text-black text-sm focus:border-blue-500 focus:ring-blue-500'
+              type="text"
+              maxLength={14}
+              value={cpf}
+              required
+              onChange={handleInputChange}
             />
           </div>
           <div className='flex flex-col'>
@@ -132,9 +163,10 @@ export default function Forminfo() {
               id="cep"
               className='py-2 px-3 block border rounded-md text-black text-sm focus:border-blue-500 focus:ring-blue-500' 
               type="text" 
+              maxLength={9}
               required
               value={cep} 
-              onChange={(e) => setCep(e.target.value)} 
+              onChange={handleInputChangeCep} 
             />
           </div>
           <div className='flex flex-col'>
