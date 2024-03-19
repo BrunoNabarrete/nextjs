@@ -46,7 +46,7 @@ export default function Forminfo() {
 
 
     try {
-      const response = await fetch('http://localhost:8080/entregas', {
+      const response = await fetch('https://api.brotherhoodonline.com.br/entregas', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
