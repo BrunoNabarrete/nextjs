@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import Loading from '../../Loading';
+import { useRouter } from 'next/router';
 
 export default function Forminfo() {
   const [nomeRua, setNomeRua] = useState('');
@@ -13,6 +14,8 @@ export default function Forminfo() {
   const [complemento, setComplemento] = useState('');
   const [telefone, setTelefone] = useState('');
   const [loading, setLoading] = useState(false);
+
+  const router = useRouter();
   
   const handleInputChange = (event) => {
     let value = event.target.value;
@@ -57,7 +60,9 @@ export default function Forminfo() {
         body: JSON.stringify(data),
       });
       if (response.status === 200) {
+        setLoading(false);
         alert('Entrega cadastrada com sucesso!');
+        router.push('/');
       }
       else {
         console.log(response);
@@ -67,7 +72,8 @@ export default function Forminfo() {
     catch (error) {
       console.log(error);
     }
-    setLoading(false);
+
+
   }
 
   return (

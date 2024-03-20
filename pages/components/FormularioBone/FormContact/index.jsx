@@ -11,7 +11,7 @@ export default function FormContact() {
           É jogador ativo ?
         </h3>
         <p className="mt-1 text-white">
-          Preencha o formulário e receba um contato de um de nossos colaboradores.
+          Preencha o formulário e receba um contato de um dos nossos colaboradores.
         </p>
       </div>
       <div className="text-left w-full">
