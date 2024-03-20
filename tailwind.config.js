@@ -12,6 +12,9 @@ module.exports = {
   ],
   theme: {
     extend: {
+      animation: {
+        'spin-slow': 'spin 3s linear infinite',
+      },
       colors: {
         'green-true': '#8cc63e',
         'blue-true': '#262261',
