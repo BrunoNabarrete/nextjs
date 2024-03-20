@@ -25,7 +25,14 @@ const DeclaracaoDeConteudo = () => {
   
 
   const consultarPorId = async (id) => {
-    const response = await fetch(`https://api.brotherhoodonline.com.br/entregas/${id}`);
+    const response = await fetch(`https://api.brotherhoodonline.com.br/entregas/${id}`
+      , {
+        method: 'GET',
+        headers: {
+          'Content-Type': 'application/json',
+          'Access-Control-Allow-Origin': '*',
+        },
+      });
     const data = await response.json();
     setNomeRua(data.nomeRua);
     setNome(data.nomePessoa);
