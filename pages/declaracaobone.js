@@ -42,7 +42,7 @@ const DeclaracaoDeConteudo = () => {
   return (
     <div className="mx-auto max-w-4xl">
       <input type="number" value={id} onChange={(e) => setId(e.target.value)} />
-      <button onClick={() => consultarPorId(id)}>Consultar</button>
+      <button onClick={() => consultarPorId(+id)}>Consultar</button>
       <input type="number" placeholder='quantidade de boné' value={quantidade} onChange={(e) => setQuantidade(e.target.value)} />
       <h2 className="text-center text-xl font-bold mb-4">DECLARAÇÃO DE CONTEÚDO</h2>
 

@@ -4,7 +4,7 @@ export default function Document() {
   return (
     <Html lang="en">
       <Head>
-        <script async src="https://kit.fontawesome.com/f587f14af9.js" crossorigin="anonymous"></script>
+        <script async src="https://kit.fontawesome.com/f587f14af9.js" crossOrigin="anonymous"></script>
       </Head>
       <body>
         <Main />
