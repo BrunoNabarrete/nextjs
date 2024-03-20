@@ -57,6 +57,7 @@ export default function Forminfo() {
         alert('Entrega cadastrada com sucesso!');
       }
       else {
+        console.log(response);
         alert('Erro ao cadastrar entrega');
       };
     }

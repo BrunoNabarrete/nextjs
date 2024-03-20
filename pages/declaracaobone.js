@@ -25,7 +25,7 @@ const DeclaracaoDeConteudo = () => {
   
 
   const consultarPorId = async (id) => {
-    const response = await fetch(`http://localhost:8080/entregas/${id}`);
+    const response = await fetch(`https://api.brotherhoodonline.com.br/entregas/${id}`);
     const data = await response.json();
     setNomeRua(data.nomeRua);
     setNome(data.nomePessoa);
