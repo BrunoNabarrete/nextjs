@@ -28,7 +28,6 @@ const DeclaracaoDeConteudo = () => {
     const response = await fetch(`https://api.brotherhoodonline.com.br/entregas/${id}`
       , {
         method: 'GET',
-        mode: 'no-cors',
         headers: {
           'Content-Type': 'application/json',
         },
