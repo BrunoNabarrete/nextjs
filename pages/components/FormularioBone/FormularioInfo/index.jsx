@@ -168,6 +168,7 @@ export default function Forminfo() {
                 id="estado"
                 className='py-2 px-3 block border rounded-md text-black text-sm focus:border-blue-500 focus:ring-blue-500' 
                 type="text" 
+                placeholder='Exemplo: SP, RJ, MG...'
                 required
                 value={estado} 
                 onChange={(e) => setEstado(e.target.value)} 
