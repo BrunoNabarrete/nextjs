@@ -83,7 +83,7 @@ const DeclaracaoDeConteudo = () => {
           </div>
           <div>
             <label className="block font-bold">ENDEREÇO:</label>
-            <div>{nomeRua.toUpperCase()}, {numero},Complemento: {complemento} {bairro.toUpperCase()}</div>
+            <div>{nomeRua.toUpperCase()}, {numero},Complemento: {complemento}, Bairro: {bairro.toUpperCase()}</div>
           </div>
           <div>
             <label className="block font-bold">CIDADE: UF:</label>
