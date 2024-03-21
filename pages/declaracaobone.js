@@ -20,7 +20,7 @@ const DeclaracaoDeConteudo = () => {
     endereco: 'RUA DOM PEDRO I, 1558, VILA PIRES',
     cidadeUf: 'SANTO ANDRÉ, SP',
     cep: '09130-012',
-    cpfCnpj: '47.442.540/0001-99',
+    cpfCnpj: '47.442.540/0001-00',
   };
   
 
@@ -83,7 +83,7 @@ const DeclaracaoDeConteudo = () => {
           </div>
           <div>
             <label className="block font-bold">ENDEREÇO:</label>
-            <div>{nomeRua.toUpperCase()}, {numero}, {complemento} {bairro.toUpperCase()}</div>
+            <div>{nomeRua.toUpperCase()}, {numero},Complemento: {complemento} {bairro.toUpperCase()}</div>
           </div>
           <div>
             <label className="block font-bold">CIDADE: UF:</label>
