@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 
 const DeclaracaoDeConteudo = () => {
   const [nomeRua, setNomeRua] = useState('');
@@ -11,9 +11,10 @@ const DeclaracaoDeConteudo = () => {
   const [estado, setEstado] = useState('');
   const [complemento, setComplemento] = useState('');
   const [valor, setValor] = useState(50);
-  const [quantidade, setQuantidade] = useState(2);
+  const [quantidade, setQuantidade] = useState(1);
   const [id, setId] = useState(0);
   const [date, setDate] = useState('');
+  const [ids, setIds] = useState([0]);
 
   const remetenteData = {
     nome: 'BDR',
@@ -23,6 +24,24 @@ const DeclaracaoDeConteudo = () => {
     cpfCnpj: '47.442.540/0001-00',
   };
   
+  const consultarTodasEntregas = async () => {
+    const response = await fetch('https://api.brotherhoodonline.com.br/entregas', {
+      method: 'GET',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+    });
+    const data = await response.json();
+    data.map((entrega) => {
+      setIds((ids) => [...ids, entrega.id]);
+    });
+    
+    console.log(data.id);
+  } 
+
+  useEffect(() => {
+    consultarTodasEntregas();
+  }, []);
 
   const consultarPorId = async (id) => {
     const response = await fetch(`https://api.brotherhoodonline.com.br/entregas/${id}`
@@ -47,9 +66,19 @@ const DeclaracaoDeConteudo = () => {
 
   return (
     <div className="mx-auto max-w-4xl">
-      <input type="number" value={id} onChange={(e) => setId(e.target.value)} />
-      <button onClick={() => consultarPorId(+id)}>Consultar</button>
-      <input type="number" placeholder='quantidade de boné' value={quantidade} onChange={(e) => setQuantidade(e.target.value)} />
+      <div className='flex print:hidden'>
+        <select 
+          value={id} 
+          onChange={(e) => setId(e.target.value)} 
+          className="w-2/12 border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
+        >
+          {[...new Set(ids)].map((uniqueId) => (
+            <option key={uniqueId} value={uniqueId}>{uniqueId}</option>
+          ))}
+        </select>
+        <button onClick={() => consultarPorId(+id)}>Consultar</button>
+        <input type="number" placeholder='quantidade de boné' value={quantidade} onChange={(e) => setQuantidade(e.target.value)} />
+      </div>
       <h2 className="text-center text-xl font-bold mb-4">DECLARAÇÃO DE CONTEÚDO</h2>
 
       <div className="grid grid-cols-2 gap-4">
