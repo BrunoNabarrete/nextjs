@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import Link from 'next/link';
 
 export default function EntregasConsultas() {
   const [entregas, setEntregas] = useState([]);
@@ -41,6 +42,9 @@ export default function EntregasConsultas() {
     <div className="container mx-auto">
       <div className="mb-4">
         <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded" onClick={consultarEntregas}>Consultar</button>
+        <Link className='bg-blue-500 ml-12 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded' href="/declaracaobone">
+          Ir para impressão
+        </Link>
       </div>
       <table className="table-auto">
         <thead>
