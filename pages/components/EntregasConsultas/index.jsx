@@ -63,7 +63,7 @@ export default function EntregasConsultas() {
         throw new Error('Falha ao atualizar entrega');
       }
   
-      alert('Entrega atualizada com sucesso');
+      alert('Impresso com sucesso!');
       consultarEntregas(); 
     } catch (error) {
       console.error('Erro ao atualizar entrega', error);
