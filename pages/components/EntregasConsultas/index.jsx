@@ -19,6 +19,8 @@ export default function EntregasConsultas() {
     }
   }
 
+  
+
   const deleteEntrega = async (id) => {
     try {
       const response = await fetch(`https://api.brotherhoodonline.com.br/entregas/${id}`, {
@@ -37,6 +39,37 @@ export default function EntregasConsultas() {
       console.error('Erro ao deletar entrega', error);
     }
   }
+
+  const updateEntrega = async (id) => {
+    try {
+      const response = await fetch(`https://api.brotherhoodonline.com.br/entregas/${id}`);
+      if (!response.ok) {
+        throw new Error('Falha ao obter detalhes da entrega');
+      }
+      
+      const data = await response.json();
+      
+      const atualizarEntregas = { ...data, impresso: 2 };
+      
+      const updateResponse = await fetch(`https://api.brotherhoodonline.com.br/entregas/${id}`, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(atualizarEntregas),
+      });
+  
+      if (!updateResponse.ok) {
+        throw new Error('Falha ao atualizar entrega');
+      }
+  
+      alert('Entrega atualizada com sucesso');
+      consultarEntregas(); 
+    } catch (error) {
+      console.error('Erro ao atualizar entrega', error);
+    }
+  }
+  
 
   return (
     <div className="container mx-auto">
@@ -63,16 +96,17 @@ export default function EntregasConsultas() {
         </thead>
         <tbody>
           {entregas.map(entrega => (
-            <tr key={entrega.id}>
-              <td className="border px-4 py-2">{entrega.id}</td>
-              <td className="border px-4 py-2">{entrega.nomePessoa}</td>
-              <td className="border px-4 py-2">{entrega.cpf}</td>
-              <td className="border px-4 py-2">{entrega.nomeRua}</td>
-              <td className="border px-4 py-2">{entrega.bairro}</td>
-              <td className="border px-4 py-2">{entrega.numero}</td>
-              <td className="border px-4 py-2">{entrega.cep}</td>
-              <td className="border px-4 py-2">{entrega.cidade}</td>
-              <td className="border px-4 py-2">{entrega.estado}</td>
+            <tr className='' key={entrega.id}>
+              <td className={entrega.impresso === 2 ? 'border px-4 py-2 bg-red-500' : 'border px-4 py-2'}>{entrega.id}</td>
+              <td className={entrega.impresso === 2 ? 'border px-4 py-2 bg-red-500' : 'border px-4 py-2'}>{entrega.nomePessoa}</td>
+              <td className={entrega.impresso === 2 ? 'border px-4 py-2 bg-red-500' : 'border px-4 py-2'}>{entrega.cpf}</td>
+              <td className={entrega.impresso === 2 ? 'border px-4 py-2 bg-red-500' : 'border px-4 py-2'}>{entrega.nomeRua}</td>
+              <td className={entrega.impresso === 2 ? 'border px-4 py-2 bg-red-500' : 'border px-4 py-2'}>{entrega.bairro}</td>
+              <td className={entrega.impresso === 2 ? 'border px-4 py-2 bg-red-500' : 'border px-4 py-2'}>{entrega.numero}</td>
+              <td className={entrega.impresso === 2 ? 'border px-4 py-2 bg-red-500' : 'border px-4 py-2'}>{entrega.cep}</td>
+              <td className={entrega.impresso === 2 ? 'border px-4 py-2 bg-red-500' : 'border px-4 py-2'}>{entrega.cidade}</td>
+              <td className={entrega.impresso === 2 ? 'border px-4 py-2 bg-red-500' : 'border px-4 py-2'}>{entrega.estado}</td>
+              <td className="border px-4 py-2"><button className="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded" onClick={() => updateEntrega(entrega.id)}>Impresso</button></td>
               <td className="border px-4 py-2"><button className="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded" onClick={() => deleteEntrega(entrega.id)}>Deletar</button></td>
             </tr>
           ))}

@@ -18,8 +18,6 @@ export default function CorreioDeclaracao() {
   const [date, setDate] = useState('');
   const [ids, setIds] = useState([0]);
 
-
-
   const remetenteData = {
     nome: 'BDR',
     endereco: 'RUA DOM PEDRO I, 1558, VILA PIRES',
