@@ -106,8 +106,12 @@ export default function EntregasConsultas() {
               <td className={entrega.impresso === 2 ? 'border px-4 py-2 bg-red-500' : 'border px-4 py-2'}>{entrega.cep}</td>
               <td className={entrega.impresso === 2 ? 'border px-4 py-2 bg-red-500' : 'border px-4 py-2'}>{entrega.cidade}</td>
               <td className={entrega.impresso === 2 ? 'border px-4 py-2 bg-red-500' : 'border px-4 py-2'}>{entrega.estado}</td>
-              <td className="border px-4 py-2"><button className="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded" onClick={() => updateEntrega(entrega.id)}>Impresso</button></td>
-              <td className="border px-4 py-2"><button className="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded" onClick={() => deleteEntrega(entrega.id)}>Deletar</button></td>
+              <td className="border px-4 py-2">
+                <button disabled={entrega.impresso === 2} className="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded" onClick={() => updateEntrega(entrega.id)}>Impresso</button>
+              </td>
+              <td className="border px-4 py-2">
+                <button className="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded" onClick={() => deleteEntrega(entrega.id)}>Deletar</button>
+              </td>
             </tr>
           ))}
         </tbody>
