@@ -125,6 +125,53 @@ const DeclaracaoDeConteudo = () => {
         </div>
       </div>
 
+      <div className="grid grid-cols-2 gap-4 hidden print:block">
+        <br />
+        <div className="grid grid-cols-2 gap-4">
+          {/* Remetente */}
+          <div>
+            <h3 className="font-bold mb-2">REMETENTE</h3>
+            <div>
+              <label className="block font-bold">NOME:</label>
+              <div>{remetenteData.nome}</div>
+            </div>
+            <div>
+              <label className="block font-bold">ENDEREÇO:</label>
+              <div>{remetenteData.endereco}</div>
+            </div>
+            <div>
+              <label className="block font-bold">CIDADE: UF:</label>
+              <div>{remetenteData.cidadeUf}</div>
+            </div>
+            <div>
+              <label className="block font-bold">CEP: CPF/CNPJ/DOC.ESTRANGEIRO:</label>
+              <div>CEP {remetenteData.cep}, CPF/CNPJ/DOC: {remetenteData.cpfCnpj}</div>
+            </div>
+          </div>
+
+          {/* Destinatário */}
+          <div>
+            <h3 className="font-bold mb-2">DESTINATÁRIO</h3>
+            <div>
+              <label className="block font-bold">NOME:</label>
+              <div>{nome.toUpperCase()}</div>
+            </div>
+            <div>
+              <label className="block font-bold">ENDEREÇO:</label>
+              <div>{nomeRua.toUpperCase()}, {numero},Complemento: {complemento}, Bairro: {bairro.toUpperCase()}</div>
+            </div>
+            <div>
+              <label className="block font-bold">CIDADE: UF:</label>
+              <div>{cidade.toUpperCase()}, {estado.toUpperCase()}</div>
+            </div>
+            <div>
+              <label className="block font-bold">CEP: CPF/CNPJ/DOC.ESTRANGEIRO:</label>
+              <div>CEP DESTINATÁRIO: {cep}, CPF/CNPJ/DOC: {cpfCnpj}</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
       {/* Itens */}
       <table className="w-full mt-4 border-collapse border border-black">
         <thead>
