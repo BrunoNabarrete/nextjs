@@ -51,7 +51,7 @@ export default function EntregasConsultas() {
       
       const atualizarEntregas = { ...data, impresso: 2 };
       
-      const updateResponse = await fetch(`https://api.brotherhoodonline.com.br/entregas/${id}`, {
+      const updateResponse = await fetch(`https://api.brotherhoodonline.com.br/entregas/`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
