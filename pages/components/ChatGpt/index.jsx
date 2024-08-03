@@ -10,8 +10,11 @@ export default function ChatWithAI() {
     const newConversation = [...conversation, { sender: 'user', message: userMessage }];
     setConversation(newConversation);
     try {
+      console.log('Sending message to AI:', userMessage);
       const response = await axios.post('http://localhost:3000/chat', { message: userMessage });
-      setConversation(prev => [...prev, { sender: 'ai', message: response.data.message }]);
+      console.log('Received response from AI:', response);
+      console.log('Received response from AI:', response.data.response);
+      setConversation(prev => [...prev, { sender: 'ai', message: response.data.response }]);
     } catch (error) {
       console.error('Error sending message to AI:', error);
     }

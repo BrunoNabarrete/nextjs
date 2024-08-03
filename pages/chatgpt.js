@@ -7,3 +7,5 @@ const ChatGpt = () => {
     </div>
   )
 }
+
+export default ChatGpt;
