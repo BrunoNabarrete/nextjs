@@ -11,7 +11,7 @@ export default function ChatWithAI() {
     setConversation(newConversation);
     try {
       console.log('Sending message to AI:', userMessage);
-      const response = await axios.post('http://localhost:3000/chat', { message: userMessage });
+      const response = await axios.post('https://e8cd-2804-14d-7896-8305-4474-89c0-937-720f.ngrok-free.app/chat', { message: userMessage });
       console.log('Received response from AI:', response);
       console.log('Received response from AI:', response.data.response);
       setConversation(prev => [...prev, { sender: 'ai', message: response.data.response }]);
