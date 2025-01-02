@@ -1,0 +1,127 @@
+.conversaList {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  background-color: #f4f4f4;
+  min-height: 100vh;
+
+  h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333;
+  }
+
+  .conversaItem {
+    width: 100%;
+    max-width: 400px;
+    padding: 15px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: all 0.3s ease;
+
+    &:hover {
+      transform: scale(1.03);
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    p {
+      margin: 5px 0;
+      font-size: 16px;
+      color: #555;
+
+      strong {
+        color: #222;
+      }
+    }
+  }
+}
+
+.chatWindow {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  background-color: #fff;
+
+  .chatHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+
+    h3 {
+      margin: 0;
+    }
+
+    button {
+      background-color: #fff;
+      color: #007bff;
+      border: none;
+      padding: 5px 10px;
+      border-radius: 5px;
+      cursor: pointer;
+
+      &:hover {
+        background-color: #0056b3;
+        color: #fff;
+      }
+    }
+  }
+
+  .chatMessages {
+    flex-grow: 1;
+    padding: 20px;
+    overflow-y: auto;
+
+    .message {
+      margin-bottom: 10px;
+      padding: 10px;
+      border-radius: 10px;
+      font-size: 14px;
+
+      &.userMessage {
+        background-color: #f1f1f1;
+        text-align: left;
+      }
+
+      &.assistantMessage {
+        background-color: #007bff;
+        color: #fff;
+        text-align: right;
+      }
+    }
+  }
+
+  .chatFooter {
+    display: flex;
+    padding: 10px 20px;
+    background-color: #f4f4f4;
+
+    input {
+      flex-grow: 1;
+      padding: 10px;
+      margin-right: 10px;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+    }
+
+    button {
+      background-color: #007bff;
+      color: #fff;
+      border: none;
+      padding: 10px 15px;
+      border-radius: 5px;
+      cursor: pointer;
+
+      &:hover {
+        background-color: #0056b3;
+      }
+    }
+  }
+}

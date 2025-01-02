@@ -1,41 +1,109 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import axios from 'axios';
+import styles from './chat-window.module.scss';
 
-export default function ChatWithAI() {
-  const [userMessage, setUserMessage] = useState('');
-  const [conversation, setConversation] = useState([]);
+const ChatWindow = () => {
+  const [conversas, setConversas] = useState([]);
+  const [conversaSelecionada, setConversaSelecionada] = useState(null);
+  const [novaMensagem, setNovaMensagem] = useState('');
 
-  const sendMessage = async () => {
-    if (!userMessage.trim()) return;
-    const newConversation = [...conversation, { sender: 'user', message: userMessage }];
-    setConversation(newConversation);
-    try {
-      console.log('Sending message to AI:', userMessage);
-      const response = await axios.post('https://52c1-2804-14d-7896-8305-4474-89c0-937-720f.ngrok-free.app/chat', { message: userMessage });
-      console.log('Received response from AI:', response);
-      console.log('Received response from AI:', response.data.response);
-      setConversation(prev => [...prev, { sender: 'ai', message: response.data.response }]);
-    } catch (error) {
-      console.error('Error sending message to AI:', error);
-    }
-    setUserMessage('');
+  useEffect(() => {
+    const fetchConversas = async () => {
+      try {
+        const response = await axios.get('https://back-end-qwjb.onrender.com/api/conversas');
+        setConversas(response.data);
+      } catch (error) {
+        console.error('Erro ao buscar as conversas:', error);
+      }
+    };
+    fetchConversas();
+  }, []);
+
+  const selecionarConversa = (conversa) => {
+    setConversaSelecionada(conversa);
   };
 
+  const enviarMensagem = async () => {
+    if (!novaMensagem.trim() || !conversaSelecionada) return;
+
+    const novaMsg = {
+      content: novaMensagem,
+      role: 'assistant',
+    };
+
+    const updatedConversa = {
+      ...conversaSelecionada,
+      mensagens: [...conversaSelecionada.mensagens, novaMsg],
+    };
+
+    try {
+      await axios.post(
+        `http://localhost:5275/api/conversas/${conversaSelecionada._id}/messages`,
+        novaMsg
+      );
+      setConversaSelecionada(updatedConversa);
+      setNovaMensagem('');
+    } catch (error) {
+      console.error('Erro ao enviar mensagem:', error);
+    }
+  };
+
+  if (!conversaSelecionada) {
+    return (
+      <div className={styles.conversaList}>
+        <h2>Conversas Disponíveis</h2>
+        {conversas.length === 0 ? (
+          <p>Carregando ou nenhuma conversa disponível...</p>
+        ) : (
+          conversas.map((conversa) => (
+            <div
+              key={conversa._id}
+              className={`${styles.conversaItem} ${conversa.status === 'open' ? styles.open : styles.closed}`}
+              onClick={() => selecionarConversa(conversa)}
+            >
+              <p>
+                <strong>Telefone:</strong> {conversa.phone}
+              </p>
+              <p>
+                <strong>Status:</strong> {conversa.status}
+              </p>
+            </div>
+          ))
+        )}
+      </div>
+    );
+  }
+
   return (
-    <div>
-      <h1>Chat with AI</h1>
-      <div>
-        {conversation.map((msg, index) => (
-          <p key={index}><strong>{msg.sender === 'user' ? 'You: ' : 'AI: '}</strong>{msg.message}</p>
+    <div className={styles.chatWindow}>
+      <header className={styles.chatHeader}>
+        <h3>Chat com: {conversaSelecionada.phone}</h3>
+        <span>Status: {conversaSelecionada.status}</span>
+        <button onClick={() => setConversaSelecionada(null)}>Voltar</button>
+      </header>
+      <div className={styles.chatMessages}>
+        {conversaSelecionada.mensagens.map((mensagem, index) => (
+          <div
+            key={index}
+            className={`${styles.message} ${
+              mensagem.role === 'user' ? styles.userMessage : styles.assistantMessage
+            }`}
+          >
+            {mensagem.content}
+          </div>
         ))}
       </div>
-      <input
-        type="text"
-        value={userMessage}
-        onChange={(e) => setUserMessage(e.target.value)}
-        onKeyPress={(e) => e.key === 'Enter' && sendMessage()}
-      />
-      <button onClick={sendMessage}>Send</button>
+      <footer className={styles.chatFooter}>
+        <input
+          type="text"
+          placeholder="Digite sua mensagem..."
+          value={novaMensagem}
+          onChange={(e) => setNovaMensagem(e.target.value)}
+        />
+        <button onClick={enviarMensagem}>Enviar</button>
+      </footer>
     </div>
   );
-}
+};
+
+export default ChatWindow;
